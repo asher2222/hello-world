@@ -1,2 +1,7 @@
 # hello-world
-Just another repository
+
+안녕!
+
+깃을 써본 적이 없어서 지금 만져보고 있다.
+svn 처럼 익숙해지려면 오래 걸릴까?
+시행착오를 많이 겪고나면 편하겠지?
