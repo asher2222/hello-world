@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netlify 테스트 페이지</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>🚀 Netlify 테스트 페이지</h1>
+    <p>이 페이지는 HTML5 + JS만으로 구성된 정적 사이트입니다.</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>버튼 인터랙션</h2>
+      <p id="time">현재 시간 계산 중…</p>
+      <button id="btn">클릭해 보세요</button>
+      <pre id="log" class="log"></pre>
+    </section>
+
+    <section class="card">
+      <h2>Netlify Forms 데모</h2>
+      <p>아래 폼을 제출하면 Netlify 대시보드의 <em>Forms</em> 메뉴에서 제출 내역을 볼 수 있어요.</p>
+      <form name="contact" method="POST" data-netlify="true" action="/thanks.html">
+        <input type="hidden" name="form-name" value="contact" />
+        <label>이름 <input name="name" required /></label>
+        <label>이메일 <input name="email" type="email" required /></label>
+        <label>메시지 <textarea name="message" rows="4" required></textarea></label>
+        <button type="submit">보내기</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>배포: Netlify · 소스: 정적 파일</small>
+  </footer>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>
