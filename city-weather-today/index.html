@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>대도시 오늘 날씨</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <meta name="description" content="Open‑Meteo 공개 데이터를 이용한 전세계 대도시의 오늘 날씨(현재·최고·최저·강수) 대시보드" />
+</head>
+<body>
+  <header class="container header">
+    <h1>🌍 대도시 오늘 날씨</h1>
+    <p class="sub">Open‑Meteo 빅데이터(다중 기상모델 집계)를 이용해 주요 도시의 <strong>오늘</strong> 날씨를 보여줍니다.</p>
+    <div class="controls">
+      <button id="refresh">새로고침</button>
+    </div>
+  </header>
+
+  <main class="container" id="grid" aria-live="polite"></main>
+
+  <footer class="container footer">
+    <small>
+      데이터 출처: <a href="https://open-meteo.com/en/docs" target="_blank" rel="noopener">Open‑Meteo</a> (무료·무API키·CORS 지원). 
+      일부 지역은 모델 결합(ECMWF, NOAA, KMA 등)으로 제공됩니다.
+    </small>
+  </footer>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>
